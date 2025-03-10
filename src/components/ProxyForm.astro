@@ -1,0 +1,28 @@
+---
+---
+
+<form id="proxyForm">
+  <input
+    spellcheck="false"
+    autocomplete="off"
+    id="search"
+    type="text"
+    placeholder="Search the web"
+  />
+</form>
+<div id="suggestions" ></div>
+<section id="controls">
+  <button onclick="action('back', 'web')">Back</button>
+  <button onclick="action('forward', 'web')"
+    >Forward
+    <button onclick="action('reload', 'web')">Reload</button>
+    <button onclick="action('close', 'web')">Close</button>
+  </button>
+</section>
+<iframe  id="web"></iframe>
+
+<script src="@scripts/index.ts"></script>
+<script is:inline defer src="/baremux/index.js"></script>
+<script is:inline defer src="/uv/uv.bundle.js"></script>
+<script is:inline defer src="/uv/uv.config.js"></script>
+<script is:inline defer src="/epoxy/index.js"></script>

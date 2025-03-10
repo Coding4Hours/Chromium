@@ -1,0 +1,40 @@
+{  
+    // Tasks (equivalent to npm scripts)
+    "tasks": {
+      "dev": "astro dev",
+      "build": "astro build",
+      "start": "astro preview",
+      "bstart": "deno task build && deno task start",
+      "check": "deno run -A npm:@biomejs/biome check --write * && astro check"
+    },
+  
+    // Dependency import map for Deno
+    "imports": {
+      // Astro integrations
+  //    "@astrojs/partytown": "npm:@astrojs/partytown@2.1.4",
+      "@astrojs/sitemap": "npm:@astrojs/sitemap@3.2.1",
+      "@biomejs/biome": "npm:@biomejs/biome@^1.9.4",
+  
+      // Mercury Workshop libraries
+      "@mercuryworkshop/bare-mux": "npm:@mercuryworkshop/bare-mux@2.1.7",
+      "@mercuryworkshop/epoxy-transport": "npm:@mercuryworkshop/epoxy-transport@2.1.27",
+      "@mercuryworkshop/libcurl-transport": "npm:@mercuryworkshop/libcurl-transport@1.4.0",
+  
+      // Other utilities
+      "@playform/compress": "npm:@playform/compress@0.1.7",
+      "@supabase/supabase-js": "npm:@supabase/supabase-js@2.49.1",
+      "@titaniumnetwork-dev/ultraviolet": "npm:@titaniumnetwork-dev/ultraviolet@3.2.10",
+  
+      // Astro core and plugins
+      "astro": "npm:astro@5.4.2",
+      "astro-icon": "npm:astro-icon@1.1.5",
+      "astro-robots-txt": "npm:astro-robots-txt@1.0.0",
+      "astro-seo": "npm:astro-seo@0.8.4",
+  
+      // Miscellaneous
+      "chalk": "npm:chalk@5.4.1",
+      "vite-plugin-static-copy": "npm:vite-plugin-static-copy@2.3.0",
+      "wisp-server-node": "npm:wisp-server-node@1.1.7"
+    },
+    "nodeModulesDir": "auto"
+}
