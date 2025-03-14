@@ -17,8 +17,8 @@ async function registerSW(): Promise<void> {
 		await navigator.serviceWorker.register("sw.js");
 
 		const connection = new self.BareMux.BareMuxConnection("/baremux/worker.js");
-		const wispUrl = (location.protocol === 'https:' ? 'wss://' : 'ws://') +
-		location.host + '/wisp/';
+		const wispUrl = `wss://ruby.rubynetwork.co/wisp/`;
+
 
 		await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
 	} catch (error) {

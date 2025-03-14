@@ -53,18 +53,11 @@ export default defineConfig({
         server: {
             proxy: {
                 '/wisp/': {
-                    target: 'wss://ruby.rubynetwork.co/wisp/',
+                    target: 'wss://aluu.xyz/wisp/',
                     changeOrigin: true,
                     ws: true,
                     rewrite: (path) => path.replace(/^\/wisp\//, ''),
-                },
-                '/gms/': {
-                    target: 'https://rawcdn.githack.com/ruby-network/ruby-assets/main/',
-                    changeOrigin: true,
-                    ws: true,
-                    secure: false,
-                    rewrite: (path) => path.replace(/^\/gms\//, ''),
-                },
+                }
             },
         },
     },

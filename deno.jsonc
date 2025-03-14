@@ -17,7 +17,7 @@
   
       // Mercury Workshop libraries
       "@mercuryworkshop/bare-mux": "npm:@mercuryworkshop/bare-mux@2.1.7",
-      "@mercuryworkshop/epoxy-transport": "npm:@mercuryworkshop/epoxy-transport@2.1.27",
+      "@mercuryworkshop/epoxy-transport": "npm:@mercuryworkshop/epoxy-transport@2.1.26",
       "@mercuryworkshop/libcurl-transport": "npm:@mercuryworkshop/libcurl-transport@1.4.0",
   
       // Other utilities

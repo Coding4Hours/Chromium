@@ -1,0 +1,35 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "A brief description of your project",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "start": "astro preview",
+    "bstart": "deno task build && deno task start", 
+    "check": "deno run -A npm:@biomejs/biome check --write * && astro check"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.2.1",
+    "@biomejs/biome": "^1.9.4",
+    "@mercuryworkshop/bare-mux": "2.1.7",
+    "@mercuryworkshop/epoxy-transport": "2.1.26",
+    "@mercuryworkshop/libcurl-transport": "1.4.0",
+    "@playform/compress": "0.1.7",
+    "@supabase/supabase-js": "2.49.1",
+    "@titaniumnetwork-dev/ultraviolet": "3.2.10",
+    "astro": "5.4.2",
+    "astro-icon": "1.1.5",
+    "astro-robots-txt": "1.0.0",
+    "astro-seo": "0.8.4",
+    "chalk": "5.4.1",
+    "vite-plugin-static-copy": "2.3.0",
+    "wisp-server-node": "1.1.7"
+  },
+  "devDependencies": {
+    // You can move dev-specific packages here if any
+  },
+  "nodeModulesDir": "auto",
+  "type": "module"
+}
+

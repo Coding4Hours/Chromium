@@ -26,8 +26,7 @@ async function initialize() {
 		frame.style.display = "block";
 		controls.style.display = "block";
 
-		const wispUrl = `${(location.protocol === 'https:' ? 'wss://' : 'ws://') +
-		location.host}/wisp/`;
+		const wispUrl = `wss://tomp.app/wisp/`;
 		if ((await connection.getTransport()) !== "/epoxy/index.mjs") {
 			await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
 		}
